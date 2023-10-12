@@ -1,12 +1,12 @@
-<div class="container-fluid mb-5">
+<!-- <div class="container-fluid mb-5">
 
 <h2> Emplyee Details</h2>
 
 <form>
 
-    <!-- {{user.value | json}} -->
+    {{user.value | json}} -->
 
-    <div class="form-control">
+    <!-- <div class="form-control">
 
         <label for="ename">Emplyee Name :</label>
         <input type="text"  id="ename" [(ngModel)]="empName"  name="empName">
@@ -38,10 +38,78 @@
         <button type="Submit" (click)="onSubmit()">Submit</button>
     </div>
 
+</form> -->
+<!-- </div> -->
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TQ</title>
+</head>
+<body>
+    <h1>TQ Leave Application</h1>
 
+    <!-- Dropdown List 1 -->
+    <label for="dropdown1">Employee List :</label>
+    <select id="dropdown1">
+        <option value="option1">None</option>
+        <option value="option1">Shivkumar Totre</option>
+        <option value="option2">Jay Suryawanshi</option>
+        <option value="option3">Prajwal Surve</option>
+        <option value="option3">Vedant Alandkar</option>
+        <option value="option3">Mangesh Pawar</option>
+        <option value="option3">Nikhil Rane</option>
 
+    </select>
 
+    <!-- Dropdown List 2 -->
+    <label for="dropdown2">Department :</label>
+    <select id="dropdown2">
+        <option value="optionA">None</option>
+        <option value="optionA">IT</option>
+        <option value="optionB">Marketing</option>
+        <option value="optionC">Finance</option>
+        <option value="optionC">Placment Cell</option>
+        <option value="optionC">Training</option>
 
-</form>
-</div>
+    </select>
+
+    <!-- Dropdown List 3 -->
+    <label for="dropdown3">Leave Type :</label>
+    <select id="dropdown3">
+        <option value="choiceX">None</option>
+        <option value="choiceX">Half Day</option>
+        <option value="choiceY">Full Day</option>
+        <option value="choiceZ">Work From Home</option>
+    </select>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Calendar 1 -->
+    <label for="calendar1">Start Date :</label>
+    <input type="date" id="calendar1">
+
+    <!-- Calendar 2 -->
+    <label for="calendar2">End Date :</label>
+    <input type="date" id="calendar2">
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Comment Box -->
+    <label for="comment">Description :</label>
+    <textarea id="comment" rows="4" cols="50"></textarea>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Submit Button (optional) -->
+    <input type="submit" value="Submit">
+
+</body>
+</html>
+
