@@ -14,9 +14,33 @@ export class LeaveInfoComponent implements OnInit{
   startDate:string='';
   endDate:string='';
   leaveId:string='';
+  approve:number=1;
+  reject:number=0;
   constructor(private empservice:EmpServiceService,private router:Router){}
   ngOnInit(): void {
     this.getLeaveListInfo();
+  }
+  OnSubmit(leaveId:string){
+    let postUser={
+    'status':this.approve,
+    
+    };
+    this.empservice.postRequest4('emp/',postUser).subscribe((response:any)=>{
+
+    }
+
+    )
+
+  }
+  OnSubmit1(leaveId:string){
+    let postUser={
+      'status':this.reject,
+    }
+    this.empservice.postRequest4('emp/',postUser).subscribe((response:any)=>{
+
+    }
+
+    )
   }
 getLeaveListInfo(){
      this.empservice.postRequest4('emp/leavelist','').subscribe((data:any)=>{

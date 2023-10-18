@@ -44,7 +44,7 @@ export class EmpInfoComponent implements OnInit {
   }
   
   onSubmit(){
-        // alert("Leave has been appiled sucessfully");
+         alert("Leave has been appiled sucessfully");
       let postUser={
         'empName':this.empName,
         //'DeptName':this.deptName,
