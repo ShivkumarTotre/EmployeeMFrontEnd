@@ -1,1 +1,31 @@
-<p>leave-info works!</p>
+<p></p>
+<div class="ID1">
+<table style="border: black;">
+    <tr style="border: black; background-color: rgb(231, 170, 223); margin-left: 10px;">
+    <th>Leave ID</th>
+    
+    <th>Employee Name</th>
+    <th>Leave Type</th>
+    <th>Start Date</th>
+    <th> End Date</th>
+    <th>Description</th>
+    <th>Status</th>
+</tr>
+<tr style=" border: black;" *ngFor="let leave of leaveList">
+    <td >{{leave.lid}}
+   </td>
+    <td>{{leave.empName}}
+    </td>
+    <td>{{leave.leaveType}}</td>
+    <td>{{leave.startDate}}</td>
+    <td>{{leave.endDate}}</td>
+    <td>{{leave.description}}</td>
+    <td><button style="background-color: rgb(13, 129, 13); color: white; margin-left: 10px;">Approve</button>
+        <button style="background-color: rgb(219, 16, 16); color: white; margin-left: 20px;" >Reject</button></td>
+
+
+</tr>
+
+</table>
+</div>
+

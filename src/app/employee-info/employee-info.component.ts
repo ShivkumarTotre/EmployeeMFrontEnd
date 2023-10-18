@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { EmpServiceService } from '../emp-service.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-employee-info',

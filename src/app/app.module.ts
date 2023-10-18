@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmpInfoComponent } from './emp-info/emp-info.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import{HttpClientModule} from '@angular/common/http';
 import { EmployeeInfoComponent } from './employee-info/employee-info.component';
@@ -27,7 +27,8 @@ import { LeavetypeInfoComponent } from './leavetype-info/leavetype-info.componen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
