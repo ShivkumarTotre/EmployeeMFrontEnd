@@ -12,7 +12,7 @@ import{HttpClientModule} from '@angular/common/http';
 import { EmployeeInfoComponent } from './employee-info/employee-info.component';
 import { DepartmentInfoComponent } from './department-info/department-info.component';
 import { LeaveInfoComponent } from './leave-info/leave-info.component';
-import { LeavetypeInfoComponent } from './leavetype-info/leavetype-info.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { LeavetypeInfoComponent } from './leavetype-info/leavetype-info.componen
     EmployeeInfoComponent,
     DepartmentInfoComponent,
     LeaveInfoComponent,
-    LeavetypeInfoComponent
+   
   ],
   imports: [
     BrowserModule,
